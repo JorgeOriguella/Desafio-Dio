@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu desafio DIO</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;           
+        }
+        header{
+            padding-top: 35px;
+            background-image: linear-gradient(to bottom, #6A8C69, #024554);
+        }
+        header h1{
+            text-align: center;
+            color: #A8B545;
+            font-size: 2em;
+        }
+         nav{
+            color: #A8B545;
+            font-weight: bold;
+            padding: 10px;
+        }
+        nav ul li{
+            display: inline-flex;
+            color: #A8B545;
+            
+        }
+        nav a{
+            color: #A8B545;
+            text-decoration: none;
+            padding: 10px 10px 5px 10px;
+            border-radius: 0 10px 0 10px;
+        }
+        nav a:hover{
+            background-color: #A8B545;
+            color: #024554;
+        }
+        main{
+            margin: auto;
+            padding: 15px;
+
+        }
+        main h3{
+            text-align: center;
+            background-color: #c2c0a62f;
+            color: #53736A;
+            font-size: 1.4em;
+            padding: 10px;
+        }
+        main h4{
+            background-image: linear-gradient(to right, #c2c0a63f, #ffffff);
+            padding: 5px;
+            padding-top: 15px;
+        }
+        main p{
+            text-align: justify;
+            font-size: 1.1em;
+            line-height: 1.8em;
+            text-indent: 20px;
+            padding: 10px;
+
+        }
+        main strong{
+            font-weight: bold;
+            color: #024554;
+        }
+        article picture img{
+            width: 100%;
+            
+        }
+        section h3{
+            margin-bottom: 15px;
+        }
+        section ul{
+            padding: 20px;
+            list-style-type: '\2714\00A0\00A0';
+            list-style-position: inside;    
+        }
+        section li{
+            padding: 5px;
+        }
+        li.externo::after{
+            content: '\00A0\1F517';
+        }
+        .topo{
+            text-align: right;
+        }
+        .voltar{
+            text-decoration: none;
+            color: #A8B545;
+            font-weight: lighter;
+            text-align: right;
+        }
+        .voltar:hover{
+            background-color: #53736a17;
+            padding: 5px;
+            border-radius: 10px;
+        }
+        #linksRef{
+            background-color: #53736a80 ;
+            width: 50%;
+            margin: auto;
+            border-radius: 20px;
+            padding: 0px;
+        }
+        #sobre{
+            text-align: center;
+            color: #A8B545;
+            background-color: #024554;
+            font-weight: bold;
+            border-radius: 10px 10px 0px 0px;
+
+        }
+        .sobre{
+            text-decoration: none;
+            color: #024554;
+            padding: 5px;
+            
+        }
+        .sobre:hover{
+            color: #A8B545;
+            background-color: #024554;
+        }
+        footer{
+            background-image: linear-gradient(to bottom, #6A8C69, #024554);
+        }
+        footer p{
+            padding: 0px;
+            color: #c2d43a;
+            text-align: center;
+        }
+        footer a{
+            text-decoration: none;
+            color: #c2d43a;   
+        }
+    
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Primeiros passos no HTML5</h1>
+
+        
+
+        <nav>
+            <h2 id="indice">Menu</h2>
+            <ul>
+                <li><a href="#historia">História da Internet</a></li>
+                <li><a href="#clients">O que são Clients?</a></li>
+                <li><a href="#servers">O que são Servers?</a></li>
+                <li><a href="#semantico">HTML Semântico</a></li>
+                <li><a href="#scraping">Web Scraping</a></li>
+                <li><a href="#acessibilidade">Acessibilidade</a></li>
+                <li><a href="#referencia">Referências</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <h3 id="historia">História da Internet</h3>
+                <p>
+                    A hitória da internet começa em meio a <strong>Guerra Fria</strong>, que ocorreu entre 
+                    <abbr title="Estados Unidos da América">EUA</abbr> e <abbr title="União das Repúblicas Socialistas Soviéticas">URSS</abbr>. 
+                    Em 1969, os Estados Unidos com medo de um ataque da União Soviética às suas bases militares, criaram a <strong>ARPANET</strong> 
+                    para que a troca de dados fosse mais segura, e os dados não ficassem centralizados em um único lugar, 
+                    correndo risco de em um ateque às suas bases militares, perder todas as suas informações.
+                </p>
+                <p>
+                    Após a tensão entre os dois países esfriar, na década de 1970, a <strong>ARPANET</strong> foi aberta para localidades não militares. 
+                    Desta forma, a rede ficou muito grande, surgiram novos protocolos, até o cientista <strong>Tim Beners-Lee</strong> 
+                    criar a <em><strong>World Wide Web</strong></em>, o <em>WWW</em> e o protocolo <em><strong>HTTP</strong></em>, que contribuiram para chegar aos dias de hoje.
+                </p>
+                <picture>
+                    <source media="(max-width: 768px)" srcset="timP.jpg" type="image/png">
+                    <img src="timGG.jpg" alt="Foto do Cientista Tim benners-Lee, Criador do World Wide Web." max-width="600px" height="500px">
+                </picture>
+                <p class="topo"><a class="voltar" href="#indice"><small>Voltar ao topo</small></a></p>
+        </article>
+
+        <section>   
+            <article>
+                <h3 id="clients">O que são <em>Clients</em>?</h3>
+                    <p>
+                        Os <em>Clients</em> ou traduzindo, os Clientes, são <strong>desktops, celulares, tablets entre outros dispositivos</strong> que 
+                        fazem a requisição de serviços ou recursos de um servidor. É a parte que interage com o usuário, 
+                        como os navegadores, aplicativos de e-mail e de mensagens, programas de transferência de arquivos etc.
+                    </p>
+                    <p>
+                        O cliente envia solicitações ao servidor, que pode ser uma solicitação para carregar uma página web, 
+                        enviar um e-mail ou acessar um arquivo. O servidor processa a solicitação e envia a resposta de volta para o cliente, 
+                        que então exibe a informação ou realiza a ação solicitada. 
+                    </p>
+                    <p class="topo"><a class="voltar" href="#indice"><small>Voltar ao topo</small></a></p>
+            </article>
+
+            <article>
+                <h3 id="servers">O que são <em>Servers</em>?</h3>
+                    <p>
+                        Os <em>Servers</em> ou servidores, fica no lado oposto aos clients, eles respondem as solicitações feitas
+                        pelos clients, como dizemos anteriormente esses serviços podem incluir armazenamento de dados, 
+                        hospedagem de sites, gerenciamento de e-mails, processamento de aplicativos, entre outros. 
+                        Em termos simples, um servidor atende às solicitações de clientes, fornecendo-lhes os recursos ou informações que eles precisam. 
+                    </p>
+                    <p>
+                        Alguns exemplos de servidores são: <strong>Servidor Web, Servidor de Banco de Dados, Servidor de Arquivos, 
+                        Servidor de E-mail, Servidor de Aplicações</strong> entre outros.
+                    </p>
+                    <p>Os servidores podem ser:</p>
+                    <p><strong>Servidores Locais</strong>, que são servidores físicos instalados dentro da própria empresa, geralmente em uma sala de servidores.</p>
+                    <p><strong>Servidores em Nuvem</strong>, que são servidores virtuais hospedados em data centers espalhados pelo mundo.</p>
+                    <p><strong>Data Centers</strong>, que são locais com infraestrutura especializada para abrigar servidores, com sistemas de refrigeração, energia e segurança.</p>
+                    <p class="topo"><a class="voltar" href="#indice"><small>Voltar ao topo</small></a></p>
+            </article>    
+        </section>
+
+        <article>
+            <h3 id="semantico">HTML Semântico</h3>
+                <p>Mas o que é HTML semântico?</p>
+                <p><strong>HTML</strong> significa <em>Hypertext Markup Language</em>, que nada mais é que o “esqueleto” de uma página.</p>
+                <p><blockquote cite="https://brasilescola.uol.com.br/portugues/semantica.htm"><strong>Semântica</strong> é o estudo do significado e interpretação de palavras.</p></blockquote>
+                <p>
+                    O <strong>HTML semântico</strong> é a forma de deixar o site com suas informações bem explicadas e 
+                    compreensíveis para o computador, ajudando até mesmo em sua busca no Google, leitores de tela e facilitando o 
+                    entendimento de leitores de acessibilidade.
+                </p>
+            <h4>Elementos semânticos</h4>
+                <p>Temos várias tags consideradas semânticas, por exemplo, tags para estruturar uma página web, como:</p>
+                <p><em>&lt;header&gt;, &lt;nav&gt;, &lt;main&gt;, &lt;section&gt;, &lt;article&gt;, &lt;aside&gt;, &lt;footer&gt;</em>. 
+                    Semanticamente falando, essas tags, ou parte delas, fazem sentido juntas.</p>
+            <h4>Elementos não semânticos</h4>
+                <p>
+                    Diferentemente das tags citadas acima, &lt;div&gt;<small>s</small>, &lt;span&gt;<small>s</small>, 
+                    não diz nada sobre seu conteúdo, é ideal apenas para estilização.
+                </p> 
+                    <p>Também podemos incluir outras tags como &lt;b&gt;, que especifica texto em negrito sem nenhuma importância extra, 
+                    ao contrário do &lt;strong&gt;, que é usada para definir texto com grande importância.</p>
+                </p>
+                <p class="topo"><a class="voltar" href="#indice"><small>Voltar ao topo</small></a></p>
+        </article>
+
+        <article>
+            <h3 id="scraping">Web Scraping</h3>
+                <p>
+                    <strong>Web scraping</strong> é a prática de extrair dados de websites de forma automatizada, 
+                    geralmente usando programas de computador. Em vez de copiar e colar manualmente o conteúdo de um site, 
+                    o web scraping utiliza ferramentas que simulam a navegação humana, extraindo informações específicas, 
+                    como texto, imagens, preços ou qualquer tipo de dado disponível. 
+                </p>
+                <p>
+                    O <strong>Web Scraping</strong> tem diversas finalidades, entre elas são: <strong>Monitoramento de preços, 
+                    pesquisa de mercado, monitoramento de redes sociais, até mesmo para desenvolvimento de inteligência artificial</strong>.
+                </p>
+                <p>Mas em termos jurídicos, é legal fazer o web scraping?</p>
+                <p>
+                    É importante ressaltar que o web scraping pode ter questões legais envolvidas, 
+                    especialmente quando se trata de dados <ins>não disponíveis publicamente</ins> ou quando o scraping 
+                    é feito de forma excessiva, <ins>sobrecarregando o servidor do site</ins>. É fundamental verificar 
+                    os termos de serviço do site e respeitar as leis de privacidade de dados.
+                </p>
+                <p class="topo"><a class="voltar" href="#indice"><small>Voltar ao topo</small></a></p>
+        </article>
+
+        <article>
+            <h3 id="acessibilidade">Acessibilidade</h3>
+                <p>
+                    A <strong>Acessibilidade</strong> em sites refere-se à prática de projetar e desenvolver páginas web de forma que 
+                    pessoas com deficiência possam percebê-las, entendê-las, navegá-las e interagir com elas de 
+                    maneira eficaz. Isso inclui garantir que sites sejam acessíveis para pessoas com deficiência visual, 
+                    auditiva, motora e cognitiva, entre outras. 
+                </p>
+                <p>
+                    Isso pode envolver a implementação de recursos como: Legendas e transcrições para vídeos, <strong>tag &lt;track&gt;</strong>, 
+                    texto alternativo para imagens, <strong>atributo alt=""</strong>, navegação por teclado, alto contraste e tamanho de fonte ajustável, 
+                    linguagem clara e simples entre outros. Desta forma garante a inclusão, o direito de acessibilidade, 
+                    gerando benefícios para todos e boas práticas.
+                </p>
+                <p class="topo"><a class="voltar" href="#indice"><small>Voltar ao topo</small></a></p> 
+        </article>
+
+        <section >
+            <h3 id="referencia"> Sites Referência</h3>
+            <address>
+                <ul id="linksRef">
+                    <p id="sobre">Para saber mais sobre:</p>
+                    <li class="externo">A História da Internet, <a class="sobre" href="https://www.todamateria.com.br/historia-da-internet/" target="_blank" rel="external">Clique aqui</a>.</li>
+                    <li class="externo">Clients, <a class="sobre" href="https://juniorinformaticacps.com.br/glossario/28-client/#:~:text=O%20que%20%C3%A9%20um%20Client?%20Um%20Client%2C,um%20servidor%20para%20obter%20informa%C3%A7%C3%B5es%2C%20enviar%20dados" target="_blank" rel="external">Clique aqui</a>.</li>
+                    <li class="externo">Servers, <a class="sobre" href="https://querobolsa.com.br/revista/o-que-e-um-servidor" target="_blank" rel="external">Clique aqui</a>.</li>    
+                    <li class="externo">HTML Semântico, <a class="sobre" href="https://blog.geekhunter.com.br/voce-conhece-html-semantico/#:~:text=Ele%2C%20tamb%C3%A9m%2C%20deixa%20seu%20c%C3%B3digo%20mais%20limpo,s%C3%B3%20de%20passar%20o%20olho%20pela%20tela." target="_blank" rel="external">Clique aqui</a>.</li>
+                    <li class="externo">Web Scraping, <a  class="sobre" ref="https://netrin.com.br/apis/web-scraping-o-que-e-como-funciona/" target="_blank" rel="external">Clique aqui</a>.</li>
+                    <li class="externo">Acessibilidade, <a class="sobre" href="https://www.w3schools.com/html/html_accessibility.asp" target="_blank" rel="external">Clique aqui</a>.</li>
+                </ul>
+            </address>
+                <p class="topo"><a class="voltar" href="#indice"><small>Voltar ao topo</small></a></p> 
+        </section>
+
+        <footer>
+            <p><small>Desenvolvido por Jorge Marcelo Origuella</small><p>
+            <p><a href="https://www.linkedin.com/in/jorge-marcelo-origuella-57175817a" target="_blank"><img src="linkedin.png" alt="Linkedin de Jorge Marcelo" width="25px" height="25px"><sup>Jorge Marcelo</sup></a>
+            <a href="https://github.com/JorgeOriguella" target="_blank"><img src="github.png" alt="Github de Jorge Marcelo" width="25px" height="25px"><sup>JorgeOriguella</sup></a></p>
+        </footer>
+    </main>
+
+    
+    
+</body>
+</html>
